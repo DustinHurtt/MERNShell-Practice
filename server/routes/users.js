@@ -2,7 +2,6 @@ var express = require("express");
 var router = express.Router();
 
 const User = require("../models/User.model");
-const Photo = require("../models/Photo.model");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const saltRounds = 10;

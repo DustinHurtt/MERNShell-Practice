@@ -18,6 +18,8 @@ function App() {
     navigate("/");
   }
 
+  console.log(token, "Token")
+
   return (
     <div>
       <div className="navbar">
@@ -31,7 +33,7 @@ function App() {
           </div>
           {token ? (
             <nav className="nav-items">
-              <Link to="/" className="icon">Home</Link>
+              <Link to="/" className="icon">+Home</Link>
               <button onClick={logout} className="icon">Logout</button>
             </nav>
           ) : (
